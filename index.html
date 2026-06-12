@@ -215,7 +215,7 @@
               <div class="tech-stats" data-tech-stats>
                 <span><strong>95%+</strong>目标抓取成功率</span>
                 <span><strong>6条</strong>线控柔性触手</span>
-                <span><strong>260倍</strong>最大负载/自重比</span>
+                <span><strong>5倍</strong>最大负载/自重比</span>
               </div>
               <div class="tech-detail-grid" data-tech-details>
                 <article class="tech-detail">
@@ -261,69 +261,73 @@
           <p>网页内保留 PPT 中的原始演示素材，并压缩成更适合浏览器播放的版本。</p>
         </div>
         <div class="demo-grid">
-          <article class="demo-card portrait-card">
-            <div class="portrait-media">
-              <video controls preload="metadata" poster="assets/images/arm-demo-poster.webp">
-                <source src="assets/video/arm-demo.mp4?v=portrait" type="video/mp4" />
+          <div class="demo-column">
+            <article class="demo-card portrait-card">
+              <div class="portrait-media">
+                <video controls preload="metadata" poster="assets/images/arm-demo-poster.webp">
+                  <source src="assets/video/arm-demo.mp4?v=portrait" type="video/mp4" />
+                </video>
+              </div>
+              <div class="demo-card-body">
+                <h3>机械臂与末端执行器</h3>
+                <p>机械臂端侧控制与视觉定位联动，完成物品接近、姿态调整和末端执行器动作。</p>
+                <div class="demo-meta">
+                  <span>视觉定位</span>
+                  <span>逆解控制</span>
+                </div>
+              </div>
+            </article>
+            <article class="demo-card">
+              <video controls preload="metadata" poster="assets/images/slam-video-frame.webp">
+                <source src="assets/video/slam-simulation-demo.mp4" type="video/mp4" />
               </video>
-            </div>
-            <div class="demo-card-body">
-              <h3>机械臂与末端执行器</h3>
-              <p>机械臂端侧控制与视觉定位联动，完成物品接近、姿态调整和末端执行器动作。</p>
-              <div class="demo-meta">
-                <span>视觉定位</span>
-                <span>逆解控制</span>
+              <div class="demo-card-body">
+                <h3>SLAM建图与路径仿真</h3>
+                <p>电脑录屏展示 gmapping 建图、局部路径生成和导航重规划过程，补足算法侧演示证据。</p>
+                <div class="demo-meta">
+                  <span>gmapping</span>
+                  <span>重规划</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="demo-card">
-            <video controls preload="metadata" poster="assets/images/nav-real-frame.webp">
-              <source src="assets/video/indoor-navigation-demo.mp4" type="video/mp4" />
-            </video>
-            <div class="demo-card-body">
-              <h3>室内导航实机验证</h3>
-              <p>手机拍摄记录小车在桌椅、门框和狭窄通道之间完成路径跟踪与动态避障。</p>
-              <div class="demo-meta">
-                <span>路径跟踪</span>
-                <span>动态避障</span>
+            </article>
+          </div>
+          <div class="demo-column">
+            <article class="demo-card">
+              <video controls preload="metadata" poster="assets/images/nav-real-frame.webp?v=obstacle">
+                <source src="assets/video/indoor-navigation-demo.mp4" type="video/mp4" />
+              </video>
+              <div class="demo-card-body">
+                <h3>室内导航实机验证</h3>
+                <p>手机拍摄记录小车在桌椅、门框和狭窄通道之间完成路径跟踪与动态避障。</p>
+                <div class="demo-meta">
+                  <span>路径跟踪</span>
+                  <span>动态避障</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="demo-card">
-            <video controls preload="metadata" poster="assets/images/slam-video-frame.webp">
-              <source src="assets/video/slam-simulation-demo.mp4" type="video/mp4" />
-            </video>
-            <div class="demo-card-body">
-              <h3>SLAM建图与路径仿真</h3>
-              <p>电脑录屏展示 gmapping 建图、局部路径生成和导航重规划过程，补足算法侧演示证据。</p>
-              <div class="demo-meta">
-                <span>gmapping</span>
-                <span>重规划</span>
+            </article>
+            <article class="demo-card">
+              <img src="assets/images/ui-dashboard.webp" alt="小鲲适老化可视化UI首页" />
+              <div class="demo-card-body">
+                <h3>零学习成本UI</h3>
+                <p>大字体、高对比、一键直达，覆盖控制、对话、用药、紧急联系、情景模式和家属维护。</p>
+                <div class="demo-meta">
+                  <span>适老化</span>
+                  <span>一键直达</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="demo-card">
-            <img src="assets/images/ui-dashboard.webp" alt="小鲲适老化可视化UI首页" />
-            <div class="demo-card-body">
-              <h3>零学习成本UI</h3>
-              <p>大字体、高对比、一键直达，覆盖控制、对话、用药、紧急联系、情景模式和家属维护。</p>
-              <div class="demo-meta">
-                <span>适老化</span>
-                <span>一键直达</span>
+            </article>
+            <article class="demo-card">
+              <img src="assets/images/radar-board.webp" alt="毫米波雷达传感器与开发板" />
+              <div class="demo-card-body">
+                <h3>健康监测硬件</h3>
+                <p>毫米波雷达模块可接入移动平台，实现无佩戴、无图像隐私风险的呼吸和心跳监测。</p>
+                <div class="demo-meta">
+                  <span>毫米波雷达</span>
+                  <span>24h守护</span>
+                </div>
               </div>
-            </div>
-          </article>
-          <article class="demo-card">
-            <img src="assets/images/radar-board.webp" alt="毫米波雷达传感器与开发板" />
-            <div class="demo-card-body">
-              <h3>健康监测硬件</h3>
-              <p>毫米波雷达模块可接入移动平台，实现无佩戴、无图像隐私风险的呼吸和心跳监测。</p>
-              <div class="demo-meta">
-                <span>毫米波雷达</span>
-                <span>24h守护</span>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
