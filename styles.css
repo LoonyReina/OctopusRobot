@@ -564,7 +564,7 @@ figcaption {
 }
 
 .demo-grid {
-  align-items: start;
+  align-items: stretch;
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -577,6 +577,10 @@ figcaption {
   display: grid;
   gap: 18px;
   min-width: 0;
+}
+
+.demo-column:first-child {
+  grid-template-rows: minmax(0, 1fr) auto;
 }
 
 .demo-card {
@@ -616,14 +620,20 @@ figcaption {
   align-items: center;
   background: #111820;
   display: flex;
+  flex: 1;
   justify-content: center;
+  min-height: 0;
   padding: 16px;
+}
+
+.demo-card.portrait-card .demo-card-body {
+  flex: 0 0 auto;
 }
 
 .demo-card.portrait-card .portrait-media video {
   aspect-ratio: 9 / 16;
   border-radius: 6px;
-  height: min(560px, 62vh);
+  height: 100%;
   max-width: 100%;
   object-fit: contain;
   width: auto;
@@ -1033,6 +1043,10 @@ td:nth-child(2) {
     grid-column: auto;
   }
 
+  .demo-column:first-child {
+    grid-template-rows: none;
+  }
+
   .proof-card {
     min-height: auto;
   }
@@ -1048,6 +1062,11 @@ td:nth-child(2) {
 
   .contact-card {
     width: 100%;
+  }
+
+  .portrait-media,
+  .demo-card.portrait-card .demo-card-body {
+    flex: 0 0 auto;
   }
 
   .demo-card.portrait-card .portrait-media video {
