@@ -58,8 +58,8 @@ const techData = {
     ],
     points: ["激光/视觉信息完成建图定位", "导航栈生成全局路径与局部避障策略", "底盘执行并持续回传里程计与姿态误差"],
     gallery: [
-      ["assets/images/slam-map.webp", "SLAM建图效果", "SLAM地图素材展示室内环境建图和自主探索结果。"],
-      ["assets/images/chassis-demo.webp", "小鲲底盘移动演示", "底盘实测用于验证麦克纳姆轮运动控制、路径跟踪和室内避障能力。"],
+      ["assets/images/slam-video-frame.webp", "SLAM建图仿真代表帧", "从PPT电脑录屏视频中选取的建图代表帧，展示环境地图、路径线和重规划过程。"],
+      ["assets/images/nav-real-frame.webp", "室内导航实机代表帧", "从PPT手机拍摄视频中选取的实机代表帧，展示小车在桌椅障碍之间进行路径跟踪。"],
     ],
   },
   sense: {

@@ -261,11 +261,13 @@
           <p>网页内保留 PPT 中的原始演示素材，并压缩成更适合浏览器播放的版本。</p>
         </div>
         <div class="demo-grid">
-          <article class="demo-card">
-            <video controls preload="metadata" poster="assets/images/video-media2.jpg">
-              <source src="assets/video/arm-demo.mp4" type="video/mp4" />
-            </video>
-            <div>
+          <article class="demo-card portrait-card">
+            <div class="portrait-media">
+              <video controls preload="metadata" poster="assets/images/arm-demo-poster.webp">
+                <source src="assets/video/arm-demo.mp4?v=portrait" type="video/mp4" />
+              </video>
+            </div>
+            <div class="demo-card-body">
               <h3>机械臂与末端执行器</h3>
               <p>机械臂端侧控制与视觉定位联动，完成物品接近、姿态调整和末端执行器动作。</p>
               <div class="demo-meta">
@@ -275,8 +277,34 @@
             </div>
           </article>
           <article class="demo-card">
+            <video controls preload="metadata" poster="assets/images/nav-real-frame.webp">
+              <source src="assets/video/indoor-navigation-demo.mp4" type="video/mp4" />
+            </video>
+            <div class="demo-card-body">
+              <h3>室内导航实机验证</h3>
+              <p>手机拍摄记录小车在桌椅、门框和狭窄通道之间完成路径跟踪与动态避障。</p>
+              <div class="demo-meta">
+                <span>路径跟踪</span>
+                <span>动态避障</span>
+              </div>
+            </div>
+          </article>
+          <article class="demo-card">
+            <video controls preload="metadata" poster="assets/images/slam-video-frame.webp">
+              <source src="assets/video/slam-simulation-demo.mp4" type="video/mp4" />
+            </video>
+            <div class="demo-card-body">
+              <h3>SLAM建图与路径仿真</h3>
+              <p>电脑录屏展示 gmapping 建图、局部路径生成和导航重规划过程，补足算法侧演示证据。</p>
+              <div class="demo-meta">
+                <span>gmapping</span>
+                <span>重规划</span>
+              </div>
+            </div>
+          </article>
+          <article class="demo-card">
             <img src="assets/images/ui-dashboard.webp" alt="小鲲适老化可视化UI首页" />
-            <div>
+            <div class="demo-card-body">
               <h3>零学习成本UI</h3>
               <p>大字体、高对比、一键直达，覆盖控制、对话、用药、紧急联系、情景模式和家属维护。</p>
               <div class="demo-meta">
@@ -286,19 +314,8 @@
             </div>
           </article>
           <article class="demo-card">
-            <img src="assets/images/chassis-demo.webp" alt="小鲲底盘移动与麦克纳姆轮实测画面" />
-            <div>
-              <h3>底盘运动实测</h3>
-              <p>麦克纳姆轮底盘支持横移、转向和狭窄空间机动，是室内送物与避障的运动基础。</p>
-              <div class="demo-meta">
-                <span>麦克纳姆轮</span>
-                <span>室内机动</span>
-              </div>
-            </div>
-          </article>
-          <article class="demo-card">
             <img src="assets/images/radar-board.webp" alt="毫米波雷达传感器与开发板" />
-            <div>
+            <div class="demo-card-body">
               <h3>健康监测硬件</h3>
               <p>毫米波雷达模块可接入移动平台，实现无佩戴、无图像隐私风险的呼吸和心跳监测。</p>
               <div class="demo-meta">
@@ -407,43 +424,43 @@
         </div>
         <div class="team-grid">
           <article class="team-card">
-            <img src="assets/images/team-zhao-yuhang.webp" alt="赵宇航头像" />
+            <img src="assets/images/team-zhao-yuhang.webp?v=team-fix" alt="赵宇航头像" />
             <h3>赵宇航</h3>
             <p class="role">CEO</p>
             <p>中山大学本科 / 港中深PhD在读，精通Embodied AI，熟悉软硬件全链路。</p>
           </article>
           <article class="team-card">
-            <img src="assets/images/team-gan-decheng.webp" alt="甘德成头像" />
+            <img src="assets/images/team-gan-decheng.webp?v=team-fix" alt="甘德成头像" />
             <h3>甘德成</h3>
             <p class="role">CTO</p>
             <p>中山大学本硕在读，精通嵌入式开发、具身模型端侧部署、模型研究和3D设计。</p>
           </article>
           <article class="team-card">
-            <img src="assets/images/team-zhang-jinwan.webp" alt="张槿婉头像" />
+            <img src="assets/images/team-zhang-jinwan.webp?v=team-fix" alt="张槿婉头像" />
             <h3>张槿婉</h3>
             <p class="role">COO</p>
             <p>中山大学本科 / 港中深硕士在读，精通SLAM算法、车机底盘开发与机器人SDK。</p>
           </article>
           <article class="team-card">
-            <img src="assets/images/team-xu-kangjie.webp" alt="许康杰头像" />
+            <img src="assets/images/team-xu-kangjie.webp?v=team-fix" alt="许康杰头像" />
             <h3>许康杰</h3>
-            <p class="role">CFO / CIO</p>
+            <p class="role">CFO</p>
             <p>中山大学本硕在读，精通LLM与多模态模型研发，擅长UI设计和多语言编程。</p>
           </article>
           <article class="team-card">
-            <img src="assets/images/team-feng-yixuan.webp" alt="冯毅轩头像" />
+            <img src="assets/images/team-feng-yixuan.webp?v=team-fix" alt="冯毅轩头像" />
             <h3>冯毅轩</h3>
-            <p class="role">技术骨干</p>
+            <p class="role">CIO</p>
             <p>中山大学本硕在读，精通雷达生命体征检测，擅长嵌入式开发和电路设计。</p>
           </article>
           <article class="team-card">
-            <img src="assets/images/team-li-bingyi.webp" alt="李秉熠头像" />
+            <img src="assets/images/team-li-bingyi.webp?v=team-fix" alt="李秉熠头像" />
             <h3>李秉熠</h3>
             <p class="role">技术骨干</p>
             <p>中山大学本科在读，擅长AI辅助编程、3D设计和工程开发，动手能力强。</p>
           </article>
           <article class="team-card">
-            <img src="assets/images/team-tang-zihao.webp" alt="唐子昊头像" />
+            <img src="assets/images/team-tang-zihao.webp?v=team-fix" alt="唐子昊头像" />
             <h3>唐子昊</h3>
             <p class="role">技术骨干</p>
             <p>中山大学本科在读，擅长运动控制、项目迁移与机器人运动系统调试。</p>

@@ -593,7 +593,7 @@ figcaption {
   width: 100%;
 }
 
-.demo-card div {
+.demo-card-body {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -603,6 +603,23 @@ figcaption {
 .demo-card p {
   color: var(--muted);
   margin-bottom: 0;
+}
+
+.portrait-media {
+  align-items: center;
+  background: #111820;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.demo-card.portrait-card .portrait-media video {
+  aspect-ratio: 9 / 16;
+  border-radius: 6px;
+  height: min(560px, 62vh);
+  max-width: 100%;
+  object-fit: contain;
+  width: auto;
 }
 
 .demo-meta {
@@ -1024,5 +1041,10 @@ td:nth-child(2) {
 
   .contact-card {
     width: 100%;
+  }
+
+  .demo-card.portrait-card .portrait-media video {
+    height: auto;
+    width: min(100%, 360px);
   }
 }
