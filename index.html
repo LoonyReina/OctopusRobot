@@ -261,7 +261,22 @@
           <p>网页内保留 PPT 中的原始演示素材，并压缩成更适合浏览器播放的版本。</p>
         </div>
         <div class="demo-grid">
-          <div class="demo-column">
+          <div class="demo-column demo-column-portrait">
+            <article class="demo-card portrait-card">
+              <div class="portrait-media">
+                <video controls preload="metadata" poster="assets/images/octopus-hand-demo-poster.webp">
+                  <source src="assets/video/octopus-hand-demo.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="demo-card-body">
+                <h3>仿生章鱼手抓取演示</h3>
+                <p>柔性触手包络方块并稳定抬起，展示线控触手在非规则接触中的抓取能力。</p>
+                <div class="demo-meta">
+                  <span>柔性触手</span>
+                  <span>包络抓取</span>
+                </div>
+              </div>
+            </article>
             <article class="demo-card portrait-card">
               <div class="portrait-media">
                 <video controls preload="metadata" poster="assets/images/arm-demo-poster.webp">
@@ -277,21 +292,8 @@
                 </div>
               </div>
             </article>
-            <article class="demo-card">
-              <video controls preload="metadata" poster="assets/images/slam-video-frame.webp">
-                <source src="assets/video/slam-simulation-demo.mp4" type="video/mp4" />
-              </video>
-              <div class="demo-card-body">
-                <h3>SLAM建图与路径仿真</h3>
-                <p>电脑录屏展示 gmapping 建图、局部路径生成和导航重规划过程，补足算法侧演示证据。</p>
-                <div class="demo-meta">
-                  <span>gmapping</span>
-                  <span>重规划</span>
-                </div>
-              </div>
-            </article>
           </div>
-          <div class="demo-column">
+          <div class="demo-column demo-column-landscape">
             <article class="demo-card">
               <video controls preload="metadata" poster="assets/images/nav-real-frame.webp?v=obstacle">
                 <source src="assets/video/indoor-navigation-demo.mp4" type="video/mp4" />
@@ -302,6 +304,19 @@
                 <div class="demo-meta">
                   <span>路径跟踪</span>
                   <span>动态避障</span>
+                </div>
+              </div>
+            </article>
+            <article class="demo-card">
+              <video controls preload="metadata" poster="assets/images/slam-video-frame.webp">
+                <source src="assets/video/slam-simulation-demo.mp4" type="video/mp4" />
+              </video>
+              <div class="demo-card-body">
+                <h3>SLAM建图与路径仿真</h3>
+                <p>电脑录屏展示 gmapping 建图、局部路径生成和导航重规划过程，补足算法侧演示证据。</p>
+                <div class="demo-meta">
+                  <span>gmapping</span>
+                  <span>重规划</span>
                 </div>
               </div>
             </article>
