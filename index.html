@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="小鲲，全人群智能陪护机器人。融合仿生抓取、SLAM导航、非接触健康监测与端侧Agent智能控制。"
+    />
+    <title>小鲲 | 全人群智能陪护机器人</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="assets/images/hero-care.webp" />
+    <script src="assets/vendor/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="小鲲 首页">
+        <span class="brand-mark">K</span>
+        <span>
+          <strong>小鲲</strong>
+          <small>AI Care Robot</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-nav-toggle>
+        <i data-lucide="menu"></i>
+      </button>
+      <nav class="nav" data-nav>
+        <a href="#product">项目</a>
+        <a href="#technology">技术</a>
+        <a href="#market">市场</a>
+        <a href="#team">团队</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-bg" src="assets/images/hero-care.webp" alt="智能陪护机器人陪伴老人居家生活的概念场景" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">奇绩创坛 2026 融资路演项目</p>
+          <h1 id="hero-title">小鲲</h1>
+          <p class="hero-subtitle">全人群智能陪护机器人，让家庭拥有一位全天候的智能陪护管家。</p>
+          <p class="hero-copy">
+            融合仿生章鱼手抓取、SLAM精准导航、毫米波雷达健康监测与端侧Agent智能控制，面向老人、残障人士与普通家庭的真实照护场景。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#technology">
+              <i data-lucide="cpu"></i>
+              看核心技术
+            </a>
+            <a class="button secondary" href="#contact">
+              <i data-lucide="send"></i>
+              联系团队
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-band" aria-label="项目背书">
+        <div class="proof-grid">
+          <article class="proof-card">
+            <span class="metric">全国第9</span>
+            <span>华为开发者大赛，500+参赛队伍</span>
+          </article>
+          <article class="proof-card">
+            <span class="metric">2项</span>
+            <span>国家专利申请已受理</span>
+          </article>
+          <article class="proof-card">
+            <span class="metric">7人</span>
+            <span>硬件、软件、AI、设计全栈团队</span>
+          </article>
+          <article class="proof-card">
+            <span class="metric">全链路</span>
+            <span>语音指令、视觉识别、导航避障、机械臂抓取、物品递送</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section product-section" id="product">
+        <div class="section-head">
+          <p class="eyebrow">Project</p>
+          <h2>从“会说话”到“能帮忙”的家庭机器人</h2>
+          <p>
+            养老陪护产品大多停留在语音对话和提醒层，小鲲把移动、抓取、监测和决策合在一个可落地的服务机器人里。
+          </p>
+        </div>
+        <div class="product-layout">
+          <div class="product-copy">
+            <h3>面向真实照护任务的整机系统</h3>
+            <p>
+              小鲲第二代围绕四个关键问题升级：柔性抓取、低成本深度视觉、厘米级SLAM导航、抗干扰姿态感知，并新增Agent总控、适老化UI和毫米波健康监测。
+            </p>
+            <div class="feature-list">
+              <span><i data-lucide="hand"></i> 仿生章鱼手，抓取成功率95%+</span>
+              <span><i data-lucide="map"></i> 激光+视觉SLAM，动态避障&lt;0.1秒</span>
+              <span><i data-lucide="activity"></i> 呼吸/心跳24h无感监测</span>
+              <span><i data-lucide="brain"></i> 大模型Agent自主拆解任务并执行</span>
+            </div>
+          </div>
+          <figure class="media-frame">
+            <video controls preload="metadata" poster="assets/images/video-media1.jpg">
+              <source src="assets/video/navigation-demo.mp4?v=full-107" type="video/mp4" />
+            </video>
+            <figcaption>语音指令驱动车体移动的实机演示，放在前部作为“从会说话到能执行”的直接证据。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section compare-section">
+        <div class="section-head compact">
+          <p class="eyebrow">Positioning</p>
+          <h2>五维能力对比</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>对比维度</th>
+                <th>小鲲</th>
+                <th>优颐然</th>
+                <th>宇树G1</th>
+                <th>ElliQ</th>
+                <th>Amazon Astro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>抓取能力</td>
+                <td>仿生章鱼手，95%+</td>
+                <td>刚性机械爪，&lt;70%</td>
+                <td>力控3指，有限</td>
+                <td>无</td>
+                <td>无</td>
+              </tr>
+              <tr>
+                <td>导航精度</td>
+                <td>融合SLAM，厘米级</td>
+                <td>&lt;25cm，&lt;10°</td>
+                <td>需二次开发</td>
+                <td>无</td>
+                <td>视觉SLAM</td>
+              </tr>
+              <tr>
+                <td>健康监测</td>
+                <td>毫米波雷达24h</td>
+                <td>跌倒检测</td>
+                <td>无</td>
+                <td>无</td>
+                <td>无</td>
+              </tr>
+              <tr>
+                <td>智能化</td>
+                <td>Agent自主决策</td>
+                <td>规则引擎</td>
+                <td>大模型理解</td>
+                <td>GPT对话</td>
+                <td>Alexa</td>
+              </tr>
+              <tr>
+                <td>价格定位</td>
+                <td>万元级</td>
+                <td>数十万+</td>
+                <td>9.9万</td>
+                <td>订阅制</td>
+                <td>1599美元</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section technology-section" id="technology">
+        <div class="section-head">
+          <p class="eyebrow">Technology</p>
+          <h2>六大技术模块支撑整机能力</h2>
+          <p>从物理操作到主动守护，小鲲不是单点功能拼装，而是围绕家庭服务任务建立的整机能力。</p>
+        </div>
+        <div class="tech-shell">
+          <div class="tabs" role="tablist" aria-label="技术模块">
+            <button class="tab active" type="button" role="tab" aria-selected="true" data-tech-tab="grip">
+              <i data-lucide="hand"></i>
+              抓取
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tech-tab="vision">
+              <i data-lucide="scan-eye"></i>
+              视觉
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tech-tab="nav">
+              <i data-lucide="navigation"></i>
+              导航
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tech-tab="sense">
+              <i data-lucide="gauge"></i>
+              感知
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tech-tab="agent">
+              <i data-lucide="bot"></i>
+              Agent
+            </button>
+            <button class="tab" type="button" role="tab" aria-selected="false" data-tech-tab="health">
+              <i data-lucide="heart-pulse"></i>
+              健康
+            </button>
+          </div>
+          <article class="tech-panel" data-tech-panel>
+            <div class="tech-panel-copy">
+              <p class="panel-label">仿生章鱼手抓取</p>
+              <h3>从规则硬物扩展到几乎所有日常物品</h3>
+              <p class="panel-body">
+                柔性触手可自适应玻璃杯、衣物、钥匙、水果等不同形状与材质，将第一代机械掌&lt;60%的成功率提升到95%+。
+              </p>
+              <div class="tech-stats" data-tech-stats>
+                <span><strong>95%+</strong>目标抓取成功率</span>
+                <span><strong>6条</strong>线控柔性触手</span>
+                <span><strong>260倍</strong>最大负载/自重比</span>
+              </div>
+              <div class="tech-detail-grid" data-tech-details>
+                <article class="tech-detail">
+                  <span>解决痛点</span>
+                  <p>第一代机械掌只能抓规则硬质物体，面对衣服、玻璃杯、钥匙等日常物品稳定性不足。</p>
+                </article>
+                <article class="tech-detail">
+                  <span>工程方案</span>
+                  <p>以柔性触手包络目标，通过双电机协同控制张力，降低对精确夹持姿态的依赖。</p>
+                </article>
+                <article class="tech-detail">
+                  <span>落地价值</span>
+                  <p>把机器人从“移动平台”推进到能真正拿取、递送和辅助照护的服务设备。</p>
+                </article>
+              </div>
+              <p class="process-title">执行流程</p>
+              <ul class="clean-list">
+                <li>深度相机获取目标轮廓与空间坐标</li>
+                <li>逆运动学求解末端姿态与接近路径</li>
+                <li>触手包络目标并进行张力闭环控制</li>
+              </ul>
+            </div>
+            <figure class="tech-gallery" data-tech-gallery>
+              <img class="tech-main-image" src="assets/images/octopus-hand-diagram.webp" alt="仿生章鱼手结构示意图" data-tech-image />
+              <div class="tech-thumbs" data-tech-thumbs>
+                <button class="tech-thumb active" type="button" data-gallery-index="0">
+                  <img src="assets/images/octopus-hand-diagram.webp" alt="仿生章鱼手结构示意图缩略图" />
+                </button>
+                <button class="tech-thumb" type="button" data-gallery-index="1">
+                  <img src="assets/images/octopus-hand-render.webp" alt="仿生章鱼手三维结构缩略图" />
+                </button>
+              </div>
+              <figcaption data-tech-caption>触手模块、控制模块和线控结构共同完成柔性包络式抓取。</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="section demo-section">
+        <div class="section-head">
+          <p class="eyebrow">Demo</p>
+          <h2>实机演示与系统界面</h2>
+          <p>网页内保留 PPT 中的原始演示素材，并压缩成更适合浏览器播放的版本。</p>
+        </div>
+        <div class="demo-grid">
+          <article class="demo-card">
+            <video controls preload="metadata" poster="assets/images/video-media2.jpg">
+              <source src="assets/video/arm-demo.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <h3>机械臂与末端执行器</h3>
+              <p>机械臂端侧控制与视觉定位联动，完成物品接近、姿态调整和末端执行器动作。</p>
+              <div class="demo-meta">
+                <span>视觉定位</span>
+                <span>逆解控制</span>
+              </div>
+            </div>
+          </article>
+          <article class="demo-card">
+            <img src="assets/images/ui-dashboard.webp" alt="小鲲适老化可视化UI首页" />
+            <div>
+              <h3>零学习成本UI</h3>
+              <p>大字体、高对比、一键直达，覆盖控制、对话、用药、紧急联系、情景模式和家属维护。</p>
+              <div class="demo-meta">
+                <span>适老化</span>
+                <span>一键直达</span>
+              </div>
+            </div>
+          </article>
+          <article class="demo-card">
+            <img src="assets/images/chassis-demo.webp" alt="小鲲底盘移动与麦克纳姆轮实测画面" />
+            <div>
+              <h3>底盘运动实测</h3>
+              <p>麦克纳姆轮底盘支持横移、转向和狭窄空间机动，是室内送物与避障的运动基础。</p>
+              <div class="demo-meta">
+                <span>麦克纳姆轮</span>
+                <span>室内机动</span>
+              </div>
+            </div>
+          </article>
+          <article class="demo-card">
+            <img src="assets/images/radar-board.webp" alt="毫米波雷达传感器与开发板" />
+            <div>
+              <h3>健康监测硬件</h3>
+              <p>毫米波雷达模块可接入移动平台，实现无佩戴、无图像隐私风险的呼吸和心跳监测。</p>
+              <div class="demo-meta">
+                <span>毫米波雷达</span>
+                <span>24h守护</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="market-band" id="market">
+        <div class="market-content">
+          <div>
+            <p class="eyebrow">Market</p>
+            <h2>刚性需求正在放大，复杂物理操作仍是空白</h2>
+            <p>
+              中国60岁以上人口已达3.1亿，2035年将突破4亿；养老护理员缺口约550万，独居与空巢老人规模持续扩大。
+            </p>
+          </div>
+          <div class="market-stats" aria-label="市场数据">
+            <span><strong>3.1亿</strong>中国60岁以上人口</span>
+            <span><strong>550万</strong>养老护理员缺口</span>
+            <span><strong>300亿元</strong>国内养老机器人市场规模</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section module-section">
+        <div class="section-head">
+          <p class="eyebrow">System</p>
+          <h2>新增三大模块，补齐家庭陪护闭环</h2>
+        </div>
+        <div class="module-grid">
+          <article class="module-card">
+            <img src="assets/images/ui-control.webp" alt="小鲲小车控制界面" />
+            <h3>Agent硬件智能体</h3>
+            <p>Kimi k2 + DeepSeek双引擎，负责自然语言理解、任务拆解、步骤规划、执行反馈和技能复用。</p>
+          </article>
+          <article class="module-card">
+            <img src="assets/images/ui-device.webp" alt="设备控制界面" />
+            <h3>适老化可视化UI</h3>
+            <p>12大功能模块覆盖首页、控制、AI对话、用药管理、健康数据、紧急联系和情景模式。</p>
+          </article>
+          <article class="module-card">
+            <img src="assets/images/radar-board.webp" alt="毫米波雷达开发板与传感器" />
+            <h3>毫米波雷达健康守护</h3>
+            <p>无需佩戴设备，穿透衣物被褥，监测呼吸与心跳，异常自动报警并保护隐私。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section business-section">
+        <div class="business-layout">
+          <div class="section-head align-left">
+            <p class="eyebrow">Business</p>
+            <h2>硬件销售 + 订阅服务 + 平台生态</h2>
+            <p>以硬件进入家庭和养老机构，再通过健康监测、维护服务、定制化功能和开放平台建立持续收入。</p>
+          </div>
+          <div class="business-columns">
+            <article>
+              <h3>硬件销售</h3>
+              <p>高端版面向养老社区和机构，标准版面向普通家庭，入门版面向大众市场。</p>
+            </article>
+            <article>
+              <h3>订阅服务</h3>
+              <p>24h健康监测、异常报警、健康报告、定期巡检、软件升级与硬件保养。</p>
+            </article>
+            <article>
+              <h3>平台生态</h3>
+              <p>开放API接入第三方开发者，与养老机构、社区、医院形成B端解决方案。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap-section">
+        <div class="section-head">
+          <p class="eyebrow">Roadmap</p>
+          <h2>三年落地规划</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2026</span>
+            <h3>产品验证与试点</h3>
+            <p>完成整机组装联调、产品认证、小批量生产100台，与5家养老机构试点合作。</p>
+          </article>
+          <article>
+            <span>2027</span>
+            <h3>规模化与市场扩张</h3>
+            <p>销量突破1万台，覆盖全国20个城市，建立线上线下渠道并推出健康监测订阅。</p>
+          </article>
+          <article>
+            <span>2028</span>
+            <h3>品牌升级与出海</h3>
+            <p>推出第二代产品，拓展东南亚、日本等市场，开放平台API生态并启动B轮融资。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section team-section" id="team">
+        <div class="section-head">
+          <p class="eyebrow">Team</p>
+          <h2>跨学科团队，覆盖机器人全栈能力</h2>
+          <p>成员来自华为、中科大、中山大学、香港中文大学（深圳）等背景，覆盖硬件工程、嵌入式、AI算法、大模型应用、工业设计和产品设计。</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <img src="assets/images/team-zhao-yuhang.webp" alt="赵宇航头像" />
+            <h3>赵宇航</h3>
+            <p class="role">CEO</p>
+            <p>中山大学本科 / 港中深PhD在读，精通Embodied AI，熟悉软硬件全链路。</p>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team-gan-decheng.webp" alt="甘德成头像" />
+            <h3>甘德成</h3>
+            <p class="role">CTO</p>
+            <p>中山大学本硕在读，精通嵌入式开发、具身模型端侧部署、模型研究和3D设计。</p>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team-zhang-jinwan.webp" alt="张槿婉头像" />
+            <h3>张槿婉</h3>
+            <p class="role">COO</p>
+            <p>中山大学本科 / 港中深硕士在读，精通SLAM算法、车机底盘开发与机器人SDK。</p>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team-xu-kangjie.webp" alt="许康杰头像" />
+            <h3>许康杰</h3>
+            <p class="role">CFO / CIO</p>
+            <p>中山大学本硕在读，精通LLM与多模态模型研发，擅长UI设计和多语言编程。</p>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team-feng-yixuan.webp" alt="冯毅轩头像" />
+            <h3>冯毅轩</h3>
+            <p class="role">技术骨干</p>
+            <p>中山大学本硕在读，精通雷达生命体征检测，擅长嵌入式开发和电路设计。</p>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team-li-bingyi.webp" alt="李秉熠头像" />
+            <h3>李秉熠</h3>
+            <p class="role">技术骨干</p>
+            <p>中山大学本科在读，擅长AI辅助编程、3D设计和工程开发，动手能力强。</p>
+          </article>
+          <article class="team-card">
+            <img src="assets/images/team-tang-zihao.webp" alt="唐子昊头像" />
+            <h3>唐子昊</h3>
+            <p class="role">技术骨干</p>
+            <p>中山大学本科在读，擅长运动控制、项目迁移与机器人运动系统调试。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-inner">
+          <div>
+            <p class="eyebrow">Funding</p>
+            <h2>正在寻找30万-100万美元融资</h2>
+            <p>资金用途：研发40% | 生产30% | 市场20% | 团队10%。</p>
+          </div>
+          <div class="contact-card">
+            <h3>联系团队</h3>
+            <a href="tel:15315706573"><i data-lucide="phone"></i> 15315706573</a>
+            <a href="mailto:1176030928@qq.com"><i data-lucide="mail"></i> 1176030928@qq.com</a>
+            <span><i data-lucide="user"></i> 赵宇航</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
