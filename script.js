@@ -102,6 +102,7 @@ const techData = {
     ],
     points: ["识别自然语言意图并拆解任务", "调用视觉、导航、机械臂和健康监测技能", "执行后沉淀Skill，下次同类任务更快完成"],
     gallery: [
+      ["assets/images/agent-kunpeng-chat.webp", "Agent陪护对话演示", "端侧Agent结合拍照识别、情绪判断和自然语言回复，完成陪护场景中的连续交互。"],
       ["assets/images/agent-system.webp", "Agent系统运行界面", "系统运行状态界面展示Agent与工具链的协同。"],
       ["assets/images/agent-terminal.webp", "Agent终端日志", "终端日志用于展示端侧任务调用、工具执行和调试状态。"],
       ["assets/images/agent-skills.webp", "Agent技能矩阵", "技能矩阵展示重复任务学习、任务分解和工具调用的覆盖情况。"],
